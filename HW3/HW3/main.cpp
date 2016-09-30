@@ -1,9 +1,15 @@
 #include <iostream>
+#include <string>
 #include "MyInteger.hpp"
 #include "Fan.hpp"
 #include "EvenNumber.hpp"
 #include "QuadraticEquation.hpp"
 using namespace std;
+
+void sortString(char word[], int wordLength);
+char word[50];
+int size;
+
 
 int main()
 {
@@ -59,7 +65,49 @@ int main()
     // Show previous and next even number
     cout << "The even number before 16 is " << num.getPrevious() << " and the even number after 16 is " << num.getNext() << endl;
     
-    
     // 10.4
+    // Enter a word
+    cout << "Enter a word to be sorted: ";
+    cin.ignore();
+    cin.getline(word, 50);
+    size = strlen(word);
+    // Send to function
+    sortString(word, size);
+    
+    
+    // 10.10
+    
+    
     
 }
+
+void sortString(char word[], int wordLength)
+{
+    // Sort through letters
+    for (int i = 0; i < (size - 1); i++)
+         {
+             double currentMin = word[i];
+             int currentMinIndex = i;
+             
+             for (int j = i +1; j < size; j++)
+             {
+                 if (currentMin > word[j])
+                 {
+                     currentMin = word[j];
+                     currentMinIndex = j;
+                 }
+             }
+             
+             if (currentMinIndex != i)
+             {
+                 word[currentMinIndex] = word[i];
+                 word[i] = currentMin;
+             }
+         }
+    
+    // Display sorted word
+    cout << word << endl;
+}
+
+
+

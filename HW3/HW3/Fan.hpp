@@ -10,6 +10,7 @@ public:
     int speed;
     double radius;
     
+    // Defaut fan
     Fan()
     {
         speed = 1;
@@ -17,32 +18,14 @@ public:
         radius = 5;
         
     }
-    
     // Turn on fan
-    void turnOn()
-    {
-        on = true;
-    }
-    
+    void turnOn();
      // Turn off fan
-    void turnOff()
-    {
-        on = false;
-    }
-    
+    void turnOff();
     // Set new speed
-    void setSpeed(int newSpeed)
-    {
-        if (on && newSpeed >=1 && newSpeed <= 3)
-            speed = newSpeed;
-    }
-    
+    void setSpeed(int newSpeed);
     // Set radius
-    void setRadius(int newRadius)
-    {
-        radius = newRadius;
-    }
-    
+    void setRadius(int newRadius);
 };
 
 #endif /* Fan_hpp */
