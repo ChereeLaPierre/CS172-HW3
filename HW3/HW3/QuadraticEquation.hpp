@@ -1,11 +1,3 @@
-//
-//  QuadraticEquation.hpp
-//  HW3
-//
-//  Created by Cheree LaPierre on /927/16.
-//  Copyright © 2016 Cheree LaPierre. All rights reserved.
-//
-
 #ifndef QuadraticEquation_hpp
 #define QuadraticEquation_hpp
 
@@ -35,7 +27,7 @@ public:
     //discriminant
     double getDiscriminant()
     {
-        return (b * b - 4 * a * c);
+        return (pow(b, 2) - 4 * a * c);
     }
 
     //root 1

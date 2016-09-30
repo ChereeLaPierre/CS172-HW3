@@ -70,14 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				320893891D96EFAF00D6BB6B /* main.cpp */,
-				324B35DD1D9B7BDC0019786C /* MyInteger.cpp */,
-				324B35DE1D9B7BDC0019786C /* MyInteger.hpp */,
 				324B35D71D9B78410019786C /* Fan.cpp */,
 				324B35D81D9B78410019786C /* Fan.hpp */,
-				323BB4291D9CE22900B997A2 /* EvenNumber.cpp */,
-				323BB42A1D9CE22900B997A2 /* EvenNumber.hpp */,
 				324B35DA1D9B7A670019786C /* QuadraticEquation.cpp */,
 				324B35DB1D9B7A670019786C /* QuadraticEquation.hpp */,
+				323BB4291D9CE22900B997A2 /* EvenNumber.cpp */,
+				323BB42A1D9CE22900B997A2 /* EvenNumber.hpp */,
+				324B35DD1D9B7BDC0019786C /* MyInteger.cpp */,
+				324B35DE1D9B7BDC0019786C /* MyInteger.hpp */,
 			);
 			path = HW3;
 			sourceTree = "<group>";

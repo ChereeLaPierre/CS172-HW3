@@ -1,11 +1,3 @@
-//
-//  EvenNumber.hpp
-//  HW3
-//
-//  Created by Cheree LaPierre on /928/16.
-//  Copyright © 2016 Cheree LaPierre. All rights reserved.
-//
-
 #ifndef EvenNumber_hpp
 #define EvenNumber_hpp
 
@@ -15,11 +7,20 @@ class EvenNumber
 {
 public:
     int value;
-    
+    // no-arg constructor. Create object for value 0
     EvenNumber()
     {
         value = 0;
     }
+    
+    int x;
+    int answer;
+    int getValue();
+    int getNext();
+    int getPrevious();
+    void setValue(int newValue);
+    
+    EvenNumber specifiedNumber(int x);
 };
 
 #endif /* EvenNumber_hpp */

@@ -48,8 +48,17 @@ int main()
     else
     {
     // Show answer;
-        cout << "The roots are " << equation.getRoot1() << " and " << equation.getRoot2() << endl;
+        cout << "The roots are " << equation.getRoot1() << " and " << equation.getRoot2() << endl << endl;
     }
+    
+    // 9.11
+    // Set value to 16
+    EvenNumber num;
+    num.setValue(16);
+    
+    // Show previous and next even number
+    cout << "The even number before 16 is " << num.getPrevious() << " and the even number after 16 is " << num.getNext() << endl;
+    
     
     // 10.4
     
