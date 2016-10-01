@@ -37,6 +37,7 @@ void QuadraticEquation::setCoefficientC(double CoC)
     a = CoC;
 }
 
+// Check to see if discriminant is positive and if it is return root
 double QuadraticEquation::getRoot1()
 {
     if (getDiscriminant() < 0)
@@ -46,7 +47,7 @@ double QuadraticEquation::getRoot1()
     else
         return ((-b) + sqrt(getDiscriminant()))/(2 * a);
 }
-
+// Check to see if discriminant is positive and if it is return root
 double QuadraticEquation::getRoot2()
 {
     if (getDiscriminant() < 0)

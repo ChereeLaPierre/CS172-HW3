@@ -16,16 +16,23 @@ int main()
     // 9.2
     // Fan 1
     Fan fan1;
+    // Turn fan on
     fan1.turnOn();
+    // Set speed to 3
     fan1.setSpeed(3);
+    // Set radius to 10
     fan1.setRadius(10);
     
     // Fan 2
     Fan fan2;
+    // Turn fan off
     fan2.turnOff();
+    // Set speed to 2
     fan2.setSpeed(2);
+    // Set radius to 5
     fan2.setRadius(5);
     
+    // Display fan properties
     cout << "The speed of fan 1 is " << fan1.speed << " and the radius is " << fan1.radius << endl;
     cout << "The speed of fan 2 is " << fan2.speed << " and the radius is " << fan2.radius << endl << endl;
     
@@ -45,7 +52,7 @@ int main()
     QuadraticEquation equation(coefficientA, coefficientB, coefficientC);
     double discriminant;
     
-    // Check to see if discriminant is positive
+    // Check to see if discriminant is positive.
     discriminant = equation.getDiscriminant();
     if (discriminant < 0)
     {
@@ -70,6 +77,7 @@ int main()
     cout << "Enter a word to be sorted: ";
     cin.ignore();
     cin.getline(word, 50);
+    // Get the length of the word
     size = strlen(word);
     // Send to function
     sortString(word, size);
@@ -100,7 +108,7 @@ int main()
 
 void sortString(char word[], int wordLength)
 {
-    // Sort through letters
+    // Loop to sort through letters
     for (int i = 0; i < (size - 1); i++)
          {
              double currentMin = word[i];
@@ -114,7 +122,7 @@ void sortString(char word[], int wordLength)
                      currentMinIndex = j;
                  }
              }
-             
+             // Swap letters
              if (currentMinIndex != i)
              {
                  word[currentMinIndex] = word[i];
