@@ -63,7 +63,7 @@ int main()
     num.setValue(16);
     
     // Show previous and next even number
-    cout << "The even number before 16 is " << num.getPrevious() << " and the even number after 16 is " << num.getNext() << endl;
+    cout << "The even number before 16 is " << num.getPrevious() << " and the even number after 16 is " << num.getNext() << endl << endl;
     
     // 10.4
     // Enter a word
@@ -73,10 +73,27 @@ int main()
     size = strlen(word);
     // Send to function
     sortString(word, size);
-    
+    cout << endl;
     
     // 10.10
+    // Have user input a number
+    cout << "Enter a number: ";
+    int number;
+    cin >> number;
+    MyInteger number1(number);
+    cout << "(0 means false. 1 means true.)" << endl;
+    cout << "The number is even. " << number1.isEven() << endl;
+    cout << "The number is odd. " << number1.isOdd() << endl;
+    cout << "The number is prime. " << number1.isPrime() << endl;
     
+    // Set a new number
+    MyInteger number2(78);
+    cout << "The new number is 78." << endl;
+    cout << "The number 78 is even. " << number2.isEven() << endl;
+    cout << "The new number 55 is odd. " << number2.isOdd(55) << endl;
+    cout << "The new number 79 is prime. " << number2.isPrime(79) << endl;
+    cout << number << " is equal to number 2 (78). " << number1.equals(number2) << endl;
+    cout << number << " is eqial to 34. " << number1.equals(34) << endl;
     
     
 }
