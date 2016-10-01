@@ -131,7 +131,7 @@ void sortString(char word[], int wordLength)
          }
     
     // Display sorted word
-    cout << word << endl;
+    cout << "The sorted string is " << word << endl;
 }
 
 
